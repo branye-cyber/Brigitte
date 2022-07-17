@@ -41,6 +41,7 @@ body {
 }
 
 h1 {
+  font-family: "Shrikhand";
   font-size: 26px;
 }
 
@@ -213,7 +214,7 @@ a {
 
 .fa-arrow-left {
   position: absolute;
-  bottom: 15px;
+  bottom: 25px;
   left: 40px;
 }
 

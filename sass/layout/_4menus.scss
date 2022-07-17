@@ -1,0 +1,113 @@
+/* Style Pages Menu */
+.titre{
+    position: relative;
+    @extend %flex-center;
+}
+
+.fa-arrow-left{
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+}
+
+.logo{
+    width: 160px;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.photomenu{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.menu9, .menu10{
+    background-color: $color-background;
+    position: relative;
+    top: -50px;
+    padding: 30px 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-bottom: -50px;
+}
+
+.menu9{
+    height: 1350px;
+}
+
+.menu10{
+    height: 1460px;
+}
+
+.nomrestaurant{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Shrikhand';
+    font-size: 25px;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.coeur{
+    transform: scale(1.3);
+    padding-right: 20px;
+}
+
+.plat{
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    font-weight:300;
+    border-bottom: 4px solid $color-tertiary;
+    width: 40px;
+}
+
+.choix{
+    width: auto;
+    margin: 20px 0;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 25px;
+    h2{
+        font-size: 19px;
+        margin: 8px 0 0 0;
+    }
+    .details{
+        display: flex;
+        justify-content: space-between;
+        p{
+            margin: 8px 0 8px 0;
+            font-weight: 300;
+        }
+        span{
+            font-size: 18px;
+            font-weight: 900;
+        }
+    }
+}
+
+.choix:hover{
+    box-shadow: 5px 5px 5px $color-shadow;
+}
+
+.menu9 .bouton, .menu10 .bouton{
+    cursor: pointer;
+    height: 70px;
+    width: 200px;
+    margin-top: 20px;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    padding: 25px;
+    text-align: center;
+    border-radius: 60px;
+    color: white;
+    font-size: 17px;
+    @include absolute-el(95%, 0, 0, 50%, -50%, -120%);
+}
+
+.bouton:hover{
+    box-shadow: 5px 5px 5px $color-shadow;   
+}
+
+@media screen and (min-width: 1000px) {
+}

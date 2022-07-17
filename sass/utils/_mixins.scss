@@ -1,0 +1,35 @@
+// Positionne un élément dans la page
+@mixin absolute-el ($top, $right, $bottom, $left, $x, $y) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    transform: translate($x,$y);
+}
+
+@mixin pseudo-el ($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+// Agrandi la taille d'un bouton, dans un délai
+@mixin btn-grossis ($color-btn: #011c37, $color-txt:#15DEA5){
+    //margin:100px 0;
+    //width: 40%;
+    //position: relative;
+    //left: 25%;
+    text-align: center;
+    background: $color-btn;
+    color: $color-txt;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    transform: scale(1);
+    transition: transform 150ms;
+    &:hover{
+        transform: scale(1.2);
+    }
+}

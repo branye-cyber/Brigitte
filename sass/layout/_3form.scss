@@ -1,0 +1,148 @@
+// Fonctionnement du site
+.fonctionnement{
+    padding: 25px 20px;
+    .listeboutons{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.fonctionnement .bouton{
+    cursor: pointer;
+    width: auto;
+    height: 70px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    padding: 0 0 20px 0;
+    background-color: $color-background;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px $color-shadow;
+    }
+
+.fonctionnement .bouton:hover{
+    background-color: $color-primary-pale;
+    box-shadow: 5px 5px 5px $color-hover;
+    // Je n'arrive pas à modifier la couleur de l'icone au survol du bouton
+    .fonctionnement .fa-solid:hover{
+        color: $color-primary;
+        }
+    
+}
+
+.fonctionnement .fa-solid, .fonctionnement .fa-light{
+    padding: 0 40px;
+    // J'arrive seulement à la modifier en permanence
+    // color: $color-primary;
+}
+
+.fonctionnement .numero{
+    position: relative;
+    right: 10px;
+    top: 22px;
+    color: white;
+    padding-left: 7px;
+    padding-top: 4px;
+    background-color: $color-primary;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+// Restaurants proposés
+.restaurants{
+    background-color: $color-background;
+    padding: 25px 20px;
+}
+
+h3{
+    margin: 10px;
+}
+.lieu{
+    padding-left: 10px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.card{
+    width: 100%;
+    height: 265px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px $color-shadow;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 10px $color-hover;
+}
+
+.photo{
+    width: 100%;
+    height: 190px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.sousphoto{
+    display: flex;
+    justify-content: space-between;
+    .textnom{
+        display: flex;
+        flex-direction: column;
+    }
+    .coeur{
+//        color: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        transform: scale(2);
+        position: relative;
+        top: 40px;
+        margin-right: 1px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .fonctionnement .listeboutons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .fonctionnement .bouton{
+        width: auto;
+        height: 70px;
+        margin-left: 30px;
+        padding: 0px 25px 20px 0;
+        background-color: $color-background;
+        border-radius: 25px;
+        box-shadow: 5px 5px 5px $color-shadow;
+    }
+    
+    .fonctionnement .fa-solid{
+        padding: 0 40px;
+    }
+    
+    .fonctionnement .numero{
+        position: relative;
+        color: white;
+        background-color: $color-primary;
+        width: 25px;
+        height: 25px;
+        border-radius: 15px;
+    }
+
+    .cards1, .cards2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 25px;
+    }
+
+    .card{
+        width: 45%;
+    }
+}

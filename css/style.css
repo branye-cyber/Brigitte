@@ -241,14 +241,6 @@ a {
   margin-bottom: -50px;
 }
 
-.menu9 {
-  height: 1450px;
-}
-
-.menu10 {
-  height: 780px;
-}
-
 .nomrestaurant {
   display: flex;
   justify-content: space-between;
@@ -306,22 +298,19 @@ a {
 }
 
 .menu9 .bouton, .menu10 .bouton {
+  position: relative;
+  left: 30%;
   cursor: pointer;
   height: 70px;
-  width: 200px;
-  margin-top: 20px;
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 30px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   padding: 25px;
   text-align: center;
   border-radius: 60px;
   color: white;
   font-size: 17px;
-  position: absolute;
-  top: 95%;
-  right: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -120%);
 }
 .menu9 .bouton a, .menu10 .bouton a {
   color: white;

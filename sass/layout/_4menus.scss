@@ -32,13 +32,13 @@
     margin-bottom: -50px;
 }
 
-.menu9{
-    height: 1450px;
-}
+//.menu9{
+//    height: 1450px;
+//}
 
-.menu10{
-    height: 780px;
-}
+//.menu10{
+//    height: 780px;
+//}
 
 .nomrestaurant{
     display: flex;
@@ -97,17 +97,20 @@
 }
 
 .menu9 .bouton, .menu10 .bouton{
+    position: relative;
+    left: 30%;
     cursor: pointer;
     height: 70px;
-    width: 200px;
-    margin-top: 20px;
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     padding: 25px;
     text-align: center;
     border-radius: 60px;
     color: white;
     font-size: 17px;
-    @include absolute-el(95%, 0, 0, 50%, -50%, -120%);
+//    @include absolute-el(95%, 0, 0, 50%, -50%, -120%);
     a{
         color: white;
     }
@@ -115,7 +118,4 @@
 
 .bouton:hover{
     box-shadow: 5px 5px 5px $color-shadow;   
-}
-
-@media screen and (min-width: 1000px) {
 }

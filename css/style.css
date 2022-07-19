@@ -92,7 +92,7 @@ h1 {
   background-color: #eee1fd;
   box-shadow: 5px 5px 5px #555;
 }
-.fonctionnement .bouton:hover .fonctionnement .fa-solid:hover {
+.fonctionnement .bouton:hover .fa-solid {
   color: #9356DC;
 }
 
@@ -115,7 +115,7 @@ h1 {
   margin-bottom: 0;
 }
 
-.restaurants {
+#restaurants {
   background-color: #F2F2F2;
   padding: 25px 20px;
 }

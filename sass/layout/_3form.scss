@@ -22,8 +22,7 @@
 .fonctionnement .bouton:hover{
     background-color: $color-primary-pale;
     box-shadow: 5px 5px 5px $color-hover;
-    // Je n'arrive pas à modifier la couleur de l'icone au survol du bouton
-    .fonctionnement .fa-solid:hover{
+    .fa-solid{
         color: $color-primary;
         }
     
@@ -31,8 +30,6 @@
 
 .fonctionnement .fa-solid, .fonctionnement .fa-light{
     padding: 0 40px;
-    // J'arrive seulement à la modifier en permanence
-    // color: $color-primary;
 }
 
 .fonctionnement .numero{
@@ -51,7 +48,7 @@
 }
 
 // Restaurants proposés
-.restaurants{
+#restaurants{
     background-color: $color-background;
     padding: 25px 20px;
 }

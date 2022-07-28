@@ -171,6 +171,66 @@ a {
   margin-right: 1px;
 }
 
+.loader_container{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  background-color: #fff;
+  opacity: 0.9;
+  height: 100vh;
+  z-index: 1;
+  animation: loader 0.1s 2500ms forwards;
+  transform-origin: top;
+}
+
+.loader_container .loader {
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-bottom-color: #9356DC;
+  animation: spin 2s linear infinite;
+}
+
+.loader_container .loader::before, .loader_container .loader::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 7px solid transparent;
+}
+
+.loader_container .loader::before {
+  inset: 10px;
+  border-bottom-color: #FF79DA;
+  animation: spin 3s linear infinite;
+}
+
+.loader_container .loader::after {
+  inset: 25px;
+  border-bottom-color: #99E2D0;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin{
+  0%{
+      transform: rotate(0deg);
+  }
+
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes loader{
+  100% {
+      transform: scale(0);
+  }
+}
+
 @media screen and (min-width: 950px) {
   .fonctionnement .listeboutons {
     display: flex;
